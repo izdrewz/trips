@@ -20,7 +20,7 @@
           <p class="eyebrow">NEW VOLUME</p>
           <h2>Start a trip</h2>
         </div>
-        <button class="icon-button" type="button" data-action="close-dialog" aria-label="Close">×</button>
+        <button class="icon-button" type="button" onclick="this.closest('dialog').close()" aria-label="Close">×</button>
       </div>
       <label>Trip name<input name="title" required placeholder="e.g. Andalusia 2026" /></label>
       <label>Places<input name="destinations" placeholder="e.g. Málaga · Granada · Seville" /></label>
