@@ -1,5 +1,5 @@
-const CACHE = 'trips-shell-v1';
-const ASSETS = ['./', './index.html', './styles.css', './app.js', './manifest.webmanifest'];
+const CACHE = 'trips-shell-v2';
+const ASSETS = ['./', './index.html', './styles.css', './app.js', './data/andalusia-2026.js', './manifest.webmanifest'];
 
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)));
