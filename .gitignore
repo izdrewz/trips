@@ -1,0 +1,9 @@
+# Personal trip content must stay out of this public repository.
+# The app stores it locally in the browser instead.
+*.trip-backup.json
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.webp
+.DS_Store
