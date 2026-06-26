@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#284437" />
+  <meta name="description" content="Trips is a private-by-design travel planner and journal." />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Trips · travel planner</title>
+</head>
+<body>
+  <noscript>This planner needs JavaScript enabled to save your trips on this device.</noscript>
+  <div id="app" aria-live="polite"></div>
+
+  <dialog id="trip-dialog" class="dialog">
+    <form id="new-trip-form" method="dialog" class="dialog-form">
+      <div class="dialog-head">
+        <div>
+          <p class="eyebrow">NEW VOLUME</p>
+          <h2>Start a trip</h2>
+        </div>
+        <button class="icon-button" type="button" data-action="close-dialog" aria-label="Close">×</button>
+      </div>
+      <label>Trip name<input name="title" required placeholder="e.g. Andalusia 2026" /></label>
+      <label>Places<input name="destinations" placeholder="e.g. Málaga · Granada · Seville" /></label>
+      <div class="two-columns">
+        <label>Start date<input name="startDate" type="date" /></label>
+        <label>End date<input name="endDate" type="date" /></label>
+      </div>
+      <label>Cover note<textarea name="coverNote" rows="3" placeholder="A small line for the spine of this trip."></textarea></label>
+      <button class="primary wide" type="submit">Add to my shelf</button>
+    </form>
+  </dialog>
+
+  <input id="backup-import" type="file" accept="application/json,.json" hidden />
+  <script src="app.js"></script>
+</body>
+</html>
