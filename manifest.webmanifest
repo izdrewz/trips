@@ -1,0 +1,9 @@
+{
+  "name": "Trips · Travel Planner",
+  "short_name": "Trips",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f2e8",
+  "theme_color": "#284437",
+  "description": "A private-by-design travel planner and journal that saves on your device."
+}
